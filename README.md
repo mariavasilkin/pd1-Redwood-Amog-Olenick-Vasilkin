@@ -9,7 +9,7 @@ Group members:
 -Maria Vasilkin
 
 Description:
-This is an orginal concept for a web browsing management 
+This is an orginal concept for a web browsing management system which automatically creates and manages the websites you go to according to content.
 
 Instructions (for use and compiling):
 
