@@ -31,7 +31,7 @@ public class URLReaderTest {
     public String cleanedUpWiki(String subject) throws IOException {
 	String s = wiki(subject);
 	int startInd = -1, endInd;
-	for (int i = 0; i < s.length(); i++) {
+	for (int i = 0; i < s.length() && i < 1000; i++) {
 	    if ((s.substring(i,i+1)).equals("<")) {
 		startInd = i;
 		
@@ -53,7 +53,7 @@ public class URLReaderTest {
 	System.out.println("Enter a subject matter");
 	topic = input.next();
         try {
-	    System.out.println(url.wiki(topic));
+	    System.out.println(url.cleanedUpWiki(topic));
 	}
 	catch (IOException e) {
 	    System.out.println("error");
