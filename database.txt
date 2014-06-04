@@ -4098,11 +4098,8 @@ Rank	   Word	PoS	Frequency	Dispersion
 4093	   cart	n	6822	0.92
 4094	   oversee	v	6773	0.93
 4095	   stem	v	6712	0.94
-4096	   o'clock	r		0.97
+4096	   o'clock	r	6760	0.97
 4096	   elder	n	6808	0.92
-4096	   o'clock	r		0.97
-4096	   o'clock	r		0.97
-4096	   o'clock	r		0.97
 4097	   pro	n	6867	0.91
 4098	   inspiration	n	6584	0.95
 4099	   Dutch	j	6690	0.94

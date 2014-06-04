@@ -5,8 +5,9 @@ public class format{
 
     private static Scanner sc;
     private static Scanner sc2;
+    public static String[][] database;
 
-    public static void main(String[] args){
+    public static void do(){
 	try{
 	    sc = new Scanner(new File("database.txt"));
 	}
@@ -17,12 +18,14 @@ public class format{
 	sc.nextLine();
 	sc.next();
 	int i = 0;
-	while (sc.hasNext() && i < 4500){
-	    System.out.println(sc.next());
-	    System.out.println(sc.next());
-	    System.out.println(sc.next());
+	database = new String[5005][3];
+	while (sc.hasNext() && i < 5005){
+	    database[i][0] = sc.next();
+	    database[i][1] = sc.next();
+	    database[i][2] = sc.next();
 	    sc.next();
-	    sc.next();
+	    if (i != 5004)
+		sc.next();
 	    i++;
 	}
     }

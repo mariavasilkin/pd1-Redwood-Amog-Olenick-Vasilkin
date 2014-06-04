@@ -9,10 +9,15 @@ public class StringProcessor{
     private int wordcount;
     private ArrayList<String> words; //distinct words
     private ArrayList<Integer> counts; // each word's count
-    private ArrayList<Double> relFreqs; // (count/#of words) / (normal frequency of that word)
+    private ArrayList<Double> relFreqs;
+    private String[][] database;
+    
     
     public StringProcessor(String input){
 	this.input=input;
+	format f = new format();
+	f.do();
+	database = f.database();
 	int len = input.length();
 	words = new ArrayList<String>(len/4);
 	counts = new ArrayList<Integer>(len/4);
@@ -45,13 +50,26 @@ public class StringProcessor{
 	return counts.get(words.indexOf(word));
     }
 
+    public String[] mainWords(int numWords){
+	
+    }
+
     private void buildRelFreqs (){
-	double freq = 0.0;
+	double freq =;
+	double objFreq;
+	String word;
 	for (int i = 0; i < words.size(); i++){
-	    //find the word's frequency in given database, set to objFreq
+	    String word = words.get(i);
+	    double objFreq = database[findArray(database,word,0)][2]/450000000.0;
 	    freq = (0.0 + counts.get(i)) / (0.0 + wordcount);
 	    relFreqs.set(i, (freq/objFreq));
 	}
+    }
+    private int findArray (String[][] arr, String goal, int idx){
+	for (int i = 0; i < arr.length; i++){
+	    if (arr[i][idx].equals(goal))
+		return i;
+	}   
     }
 }	    
 	    
