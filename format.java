@@ -7,9 +7,10 @@ public class format{
     private static Scanner sc2;
     public static String[][] database;
 
-    public static void do(){
+    public format(){
 	try{
-	    sc = new Scanner(new File("database.txt"));
+	    sc = new Scanner(new File("database.txt")); 
+	    //source: http://www.wordfrequency.info/free.asp?s=y
 	}
 	catch(Exception e){
 	    sc = new Scanner(System.in);
