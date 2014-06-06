@@ -28,7 +28,7 @@ public class URLReaderTest {
         return getUrlSource(url);
     }
 
-    public String cleanedUpWiki(String subject) throws IOException {
+    public String cleanedUpWiki() throws IOException {
 	String s = wiki(subject);
 	int startInd = -1, endInd;
 	for (int i = 0; i < s.length() && i < 1000; i++) {

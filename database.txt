@@ -1,6 +1,6 @@
 total: 450,000,000
 
-Rank	   Word	Part of speech	Frequency	Dispersion
+Rank	   Word	PoS	Frequency	Dispersion
 1	   the	a	22038615	0.98
 2	   be	v	12545825	0.97
 3	   and	c	10741073	0.99
@@ -29,7 +29,6 @@ Rank	   Word	Part of speech	Frequency	Dispersion
 26	   from	i	1635914	0.99
 27	   that	d	1712406	0.94
 28	   not	x	1638830	0.98
-29	   n't	x		0.97
 29	   n't	x	1619007	0.97
 30	   by	i	1490548	0.96
 31	   she	p	1484869	0.91
@@ -1190,10 +1189,7 @@ Rank	   Word	Part of speech	Frequency	Dispersion
 1186	   replace	v	32688	0.96
 1187	   British	j	32929	0.95
 1188	   encourage	v	33348	0.94
-1188	   lot	r		0.97
-1188	   lot	r		0.97
-1188	   lot	r		0.97
-1188	   lot	r		0.97
+1188	   lot	r	33350	0.97
 1189	   argument	n	33394	0.94
 1190	   by	r	32560	0.96
 1191	   once	c	32180	0.97
@@ -3808,10 +3804,7 @@ Rank	   Word	Part of speech	Frequency	Dispersion
 3800	   suspicion	n	7187	0.97
 3801	   lock	n	7605	0.92
 3802	   finish	n	7585	0.92
-3802	   health-care	n		0.97
-3802	   health-care	n		0.97
-3802	   health-care	n		0.97
-3802	   health-care	n		0.97
+3802	   health-care	n	7450	0.97
 3803	   residence	n	7332	0.95
 3804	   shame	n	7347	0.95
 3805	   meaningful	j	7719	0.90
@@ -4105,11 +4098,8 @@ Rank	   Word	Part of speech	Frequency	Dispersion
 4093	   cart	n	6822	0.92
 4094	   oversee	v	6773	0.93
 4095	   stem	v	6712	0.94
-4096	   o'clock	r		0.97
+4096	   o'clock	r	6760	0.97
 4096	   elder	n	6808	0.92
-4096	   o'clock	r		0.97
-4096	   o'clock	r		0.97
-4096	   o'clock	r		0.97
 4097	   pro	n	6867	0.91
 4098	   inspiration	n	6584	0.95
 4099	   Dutch	j	6690	0.94
