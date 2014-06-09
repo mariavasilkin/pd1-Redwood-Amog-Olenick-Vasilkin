@@ -27,3 +27,5 @@ also discovered that Java doesn't have triple-quotes like Python, so we'll have 
 
 06/05/14: Maria. Added some issues. Processing stuff added (technically added on 06/06/14)
 
+06/06/14 - 06/08/14: Worked on getting the processing stuff to work with the java stuff. Failed miserably. 
+
