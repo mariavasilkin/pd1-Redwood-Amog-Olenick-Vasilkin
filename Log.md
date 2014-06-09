@@ -6,18 +6,19 @@ Date: Name. what you did.
 
 06/02/14: Jake. made a class which takes input from a large body of text and performs some basic analysis on it.
 
+06/02/14: Anjelika. modified URLReader.
 
 06/03/14: Jake. made progress on getting data about how often words are used (frequency of a word will be compared to average frequency of that word)
 
-
 06/03/14: Maria. Figuring out processing, but mostly just browsing around stack overflow so far. Nothing to commit today.
 
+06/03/14: Anjelika. URLReader works for oracle homepage but throwing IOException otherwise.
 
 06/04/14: Jake. only in-class work, finished the work from the day before. There is now a usable database of words.
 
 
 06/04/14: Maria. Worked together with Jake in class on the word frequency stuff. 
-
+06/04/14: Anjelika. Trying to fix security issues with reading URLs.
 
 06/05/14: Jake. Experienced great triumph, followed by great sorrow. Made a pretty-much-fully-operational StringProcessor class. However,
 
