@@ -86,12 +86,16 @@ public class StringProcessor{
 	    relFreqs.set(i, (freq/objFreq));
 	}
     }
-
-    public boolean isSameRootWord(String a, String b){
+    
+    public boolean isSameRootWord(String a, String b){ //GET BACK TO THIS
 	String lastTwo = a.substring(a.length() - 2);
-	if (a.substring(a.length-2).equals("ch")){
+	if (lastTwo.equals("ch") ||
+	    lastTwo.substring(1).equals("s")){
+	    return true;
+	}
+	return false;
     }
-
+	
     private int findArray (String[][] arr, String goal, int idx){ //finds the array in 2-d array arr such that the item at index idx is goal
 	for (int i = 0; i < arr.length; i++){
 	    if (arr[i][idx].equals(goal))
