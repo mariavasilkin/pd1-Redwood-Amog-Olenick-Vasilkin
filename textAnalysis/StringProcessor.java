@@ -11,12 +11,14 @@ public class StringProcessor{
     private ArrayList<Integer> counts; // each word's count
     private ArrayList<Double> relFreqs;
     private String[][] database;
+    private String[][] irregularNouns;
     
     
     public StringProcessor(String input){
 	this.input=input;
 	format f = new format();
 	database = f.database;
+	irregularNouns = f.irregularNouns;
 	int len = input.length();
 	words = new ArrayList<String>(len/4); //assumes average word length of 4
 	counts = new ArrayList<Integer>(len/4);
@@ -48,7 +50,7 @@ public class StringProcessor{
     public ArrayList<Integer> getCounts(){ return counts; }
     public ArrayList<Double> getRelFreqs(){ return relFreqs; }
     public String[][] getDatabase(){ return database; }
-
+    public String[][] getIrregularNouns(){ return irregularNouns; }
     public ArrayList<String> getWords(int occurs){
 	ArrayList<String> out = new ArrayList<String>();
 	for (int i = 0; i < words.size(); i++){
@@ -61,15 +63,16 @@ public class StringProcessor{
 	return counts.get(words.indexOf(word));
     }
 
-    public ArrayList<String> mainWords(){// returns all words which occur about 1.05 times as frequently in the input than in regular English
-	ArrayList<String> out = new ArrayList<String>(wordcount);
-	for(int i = 0; i < counts.size(); i++){
-	    if (relFreqs.get(i) > 1.05)
-		out.add(words.get(i));
+    public String[] mainWords(int numWords){
+	String[] out = new String[numWords];
+	Double[] freqArray = (Double[])relFreqs.toArray();
+	Double[] topNFreqs = quickSelect(freqArray, numWords);
+	for (int i = 0; i < numWords; i++){
+	    out[i] = words.get(relFreqs.indexOf(topNFreqs[i]));
 	}
 	return out;
     }
-
+    
     private void buildRelFreqs (){
 	double freq;
 	double objFreq;
@@ -95,7 +98,7 @@ public class StringProcessor{
 	}
 	return false;
     }
-	
+    
     private int findArray (String[][] arr, String goal, int idx){ //finds the array in 2-d array arr such that the item at index idx is goal
 	for (int i = 0; i < arr.length; i++){
 	    if (arr[i][idx].equals(goal))
@@ -103,6 +106,44 @@ public class StringProcessor{
 	}   
 	return -1;
     }
-}	    
-	    
     
+    public Double[] quickSelect(Double[] a, int k){//returns top K items
+	Double[] result = new Double[k];
+	Double[] alt = new Double[a.length];
+	Random r = new Random();
+	int ind = r.nextInt(a.length); // index of pivot
+	int altind = 0; 
+	int altind2 = 0;
+	for (int i = 0; i<a.length; i++){
+	    if (a[i].compareTo(a[ind]) <= 0){
+		alt[altind] = a[i];
+		altind++;
+	    }
+	    else{
+		alt[alt.length-1-altind2] = a[i];
+		altind2++;
+	    }
+	}
+	if (altind+1 == k){
+	    result = Arrays.copyOfRange(alt,k,a.length);
+	}
+	else{
+	    if (altind+1 < k){
+		Double[] newAlt = Arrays.copyOfRange(a,0,altind);
+		Double[] result1 = Arrays.copyOfRange(a,altind,a.length);
+		Double[] result2 = quickSelect(newAlt,k-altind-1);
+		for (int i = 0; i < k; i++){
+		    if (i < result1.length)
+			result[i] = result1[i];
+		    else
+			result[i] = result2[i - result1.length];
+		}
+	    }
+	    else{
+		Double[] newAlt = Arrays.copyOfRange(a, altind, a.length);
+		return quickSelect(newAlt,k);
+	    }
+	}
+	return result;
+    }
+}
