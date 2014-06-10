@@ -1,8 +1,17 @@
 String search = "";
+<<<<<<< HEAD
+=======
+String parentNode = "";
+String childNode = "";
+>>>>>>> 68a4bce088fa812d7b5b43ca24cceabf5ea8c7c1
 PFont f;
 int chosenChild = -1; 
 void setup() {
+<<<<<<< HEAD
     size(1000,1000);
+=======
+    size(500,500);
+>>>>>>> 68a4bce088fa812d7b5b43ca24cceabf5ea8c7c1
     f = createFont("Arial", 20, true);
     fill(0);
     text("Search something: ", 125, 30);
@@ -12,7 +21,7 @@ void setup() {
 void draw() {
     textFont(f);
     fill(0);
-    text(search, 125, 70);
+    text(search, 125, 70);//this should dissapear when i clear but doesn't
 }
 void keyReleased() {
     if (key != CODED) {
@@ -20,6 +29,7 @@ void keyReleased() {
       case BACKSPACE:
         search = search.substring(0,max(0,search.length()-1));
       case ENTER :
+//want to close the text thing here
         nodes();
       default:
         search += key;
@@ -27,8 +37,13 @@ void keyReleased() {
     }
 }   
 void nodes() {
-  clear();
+  background(0);
   fill(255);
+  rect(0,0,500,100);
+  fill(0);
+  text(search,20,20); 
+  fill(255);
+<<<<<<< HEAD
   textFont(f);
   text(search, 100, 100); 
   ellipse(350,250,100,100); 
@@ -99,5 +114,15 @@ int clicked() {
         return 5;
     }
     else return -1;
+=======
+  ellipse(250,150,80,80);
+  fill(255);
+  ellipse(50,250,80,80);
+  ellipse(150,250,80,80);
+  ellipse(250,250,80,80);
+  ellipse(350,250,80,80);
+  ellipse(450,250,80,80);
+  text("Double-click a node to search",150,350);//doesn't actually work at all yet
+>>>>>>> 68a4bce088fa812d7b5b43ca24cceabf5ea8c7c1
 }
     

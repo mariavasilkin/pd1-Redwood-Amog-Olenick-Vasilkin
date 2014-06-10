@@ -20,10 +20,13 @@ Date: Name. what you did.
 06/04/14: Maria. Worked together with Jake in class on the word frequency stuff. 
 06/04/14: Anjelika. Trying to fix security issues with reading URLs.
 
-06/05/14: Jake. Experienced great triumph, followed by great sorrow. Made a pretty-much-fully-operational StringProcessor class. However,
-
-also discovered that Java doesn't have triple-quotes like Python, so we'll have to work on string input.
-
+06/05/14: Jake. Experienced great triumph, followed by great sorrow. Made a pretty-much-fully-operational StringProcessor class. However, also discovered that Java doesn't have triple-quotes like Python, so we'll have to work on string input.
 
 06/05/14: Maria. Added some issues. Processing stuff added (technically added on 06/06/14)
+
+06/06/14: Jake. Began to work on determining if words come from the same root word or not.
+
+06/06/14 - 06/08/14: Worked on getting the processing stuff to work with the java stuff. Failed miserably.
+
+06/09/14: Jake. Did so many things omg. Mainly, used a quickSelect algorithm to get the keywords (referred to as "mainWords", idk why I did that) and also created a means of determining irregular noun plurals.
 
