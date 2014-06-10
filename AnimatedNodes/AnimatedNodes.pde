@@ -1,17 +1,12 @@
 String search = "";
-<<<<<<< HEAD
-=======
 String parentNode = "";
 String childNode = "";
->>>>>>> 68a4bce088fa812d7b5b43ca24cceabf5ea8c7c1
 PFont f;
 int chosenChild = -1; 
+int time;
+int radius = 0;
 void setup() {
-<<<<<<< HEAD
     size(1000,1000);
-=======
-    size(500,500);
->>>>>>> 68a4bce088fa812d7b5b43ca24cceabf5ea8c7c1
     f = createFont("Arial", 20, true);
     fill(0);
     text("Search something: ", 125, 30);
@@ -39,21 +34,26 @@ void keyReleased() {
 void nodes() {
   background(0);
   fill(255);
-  rect(0,0,500,100);
-  fill(0);
-  text(search,20,20); 
-  fill(255);
-<<<<<<< HEAD
   textFont(f);
   text(search, 100, 100); 
   ellipse(350,250,100,100); 
+  time = millis();
+  //bloom(50,450);    
   ellipse(50,450,100,100);
+  //bloom(200,450);
   ellipse(200,450,100,100);
+  //bloom(350,450);
   ellipse(350,450,100,100);
+  //bloom(500,450);
   ellipse(500,450,100,100);
+  //bloom(650,450);
   ellipse(650,450,100,100);
   
 } 
+
+//When you click a child it will move to the top
+//will obviously do something different, this is just to 
+//make sure that its finding the right areas 
 void mousePressed() {
   textFont(f);
   if (clicked() == 1) {
@@ -114,15 +114,6 @@ int clicked() {
         return 5;
     }
     else return -1;
-=======
-  ellipse(250,150,80,80);
-  fill(255);
-  ellipse(50,250,80,80);
-  ellipse(150,250,80,80);
-  ellipse(250,250,80,80);
-  ellipse(350,250,80,80);
-  ellipse(450,250,80,80);
-  text("Double-click a node to search",150,350);//doesn't actually work at all yet
->>>>>>> 68a4bce088fa812d7b5b43ca24cceabf5ea8c7c1
 }
+
     
