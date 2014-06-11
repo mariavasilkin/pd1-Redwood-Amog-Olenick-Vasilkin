@@ -4,7 +4,7 @@ import java.io.*;
 public class URLReader {
     public static void main(String[] args) throws Exception {
 	//	try {
-	    URL site = new URL("http://www.oracle.com");
+	    URL site = new URL("http://news.ycombinator.com");
 	    URLConnection c = site.openConnection();
 	    c.connect();
 	    
