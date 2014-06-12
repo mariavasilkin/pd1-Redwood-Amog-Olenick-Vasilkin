@@ -26,13 +26,15 @@ public class StringProcessor{
 	char tmpchr = ' ';//each character, one at a time
 	for (int i = 0; i < len; i++){
 	    tmpchr = Character.toLowerCase(input.charAt(i));
-	    if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 39)){ //if it's not in the alphabet, a hyphen
+	    if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 39)){ //if it's not in the alphabet or a hyphen
 		include(temp);
 		temp = "";
 	    }
 	    else if (tmpchr == 45){ //if it's an apostrophe
-		if (temp.length() <= 1){ //e.g. 'twas, '90s
+		if (temp.length() <= 1){ //e.g. 'twas, '90s: decades are converted into "YYYYs" form, 'twas and other archaic language left alone
+		    
 		}
+		//contractions:
 		else if (temp.equals("won'")){			
 		    include("will");
 		    include("not");
@@ -46,17 +48,26 @@ public class StringProcessor{
 		else if (temp.substring(temp.length()-2).equals("n'")){ //couldn't, hasn't, don't
 		    temp = temp.substring(0,temp.length()-2);
 		    include(temp);
-		    temp = "not";
-		    include(temp);
+		    include("not");
 		    temp = "";
 		    i++;
 		}
-		else if (input.charAt(i+1) == 'v') {
-		    temp = temp.substring(0,temp.lenght()-2);
+		else if (input.charAt(i+1) == 'v') { //they've
+		    temp = temp.substring(0,temp.length()-2);
 		    include(temp);
-		    temp = "have";
-		    include(temp);
+		    include("have");
 		    temp = "";
+		    i++;
+		}
+		else if (input.charAt(i+1) == 'l'){ //they'll
+		    temp = temp.substring(0,temp.length()-2);
+		    include(temp);
+		    include("will");
+		    i++;
+		}
+		else if (input.charAt(i+1) == 'd'){ // they'd (since this can either be "had" or "would", the 'd is fully neglected)
+		    temp = temp.substring(0,temp.length()-2);
+		    include(temp);
 		    i++;
 		}
 		else{
@@ -70,10 +81,12 @@ public class StringProcessor{
     
     public void include(String temp){
 	if (!words.contains(temp.toLowerCase())){
+	    System.out.println("add");
 	    words.add(temp.toLowerCase());
 	    counts.add(0);
 	}
 	int x = words.indexOf(temp);
+	System.out.println(x);
 	counts.set(x,counts.get(x) + 1);
 	wordcount++;
     }
