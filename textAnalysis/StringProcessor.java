@@ -26,22 +26,56 @@ public class StringProcessor{
 	char tmpchr = ' ';//each character, one at a time
 	for (int i = 0; i < len; i++){
 	    tmpchr = Character.toLowerCase(input.charAt(i));
-	    if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 39 || tmpchr == 45)){ //if it's not in the alphabet, a hyphen, or an apostrophe
-		if (!words.contains(temp.toLowerCase())){
-		    words.add(temp.toLowerCase());
-		    counts.add(0);
-		}
-		int x = words.indexOf(temp);
-		counts.set(x,counts.get(x) + 1);
-		wordcount++;
+	    if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 39)){ //if it's not in the alphabet, a hyphen
+		include(temp);
 		temp = "";
 	    }
-	    else{
-		temp = temp + tmpchr;
+	    else if (tmpchr == 45){ //if it's an apostrophe
+		if (temp.length() <= 1){ //e.g. 'twas, '90s
+		}
+		else if (temp.equals("won'")){			
+		    include("will");
+		    include("not");
+		    i++;
+		}
+		else if (temp.equals("can'")){
+		    include("can");
+		    include("not");
+		    i++;
+		}
+		else if (temp.substring(temp.length()-2).equals("n'")){ //couldn't, hasn't, don't
+		    temp = temp.substring(0,temp.length()-2);
+		    include(temp);
+		    temp = "not";
+		    include(temp);
+		    temp = "";
+		    i++;
+		}
+		else if (input.charAt(i+1) == 'v') {
+		    temp = temp.substring(0,temp.lenght()-2);
+		    include(temp);
+		    temp = "have";
+		    include(temp);
+		    temp = "";
+		    i++;
+		}
+		else{
+		    temp = temp + tmpchr;
+		}
 	    }
 	}
 	relFreqs = new ArrayList<Double>(len/4);
 	buildRelFreqs();
+    }
+    
+    public void include(String temp){
+	if (!words.contains(temp.toLowerCase())){
+	    words.add(temp.toLowerCase());
+	    counts.add(0);
+	}
+	int x = words.indexOf(temp);
+	counts.set(x,counts.get(x) + 1);
+	wordcount++;
     }
     
     public String getInput(){ return input; }
