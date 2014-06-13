@@ -26,67 +26,75 @@ public class StringProcessor{
 	char tmpchr = ' ';//each character, one at a time
 	for (int i = 0; i < len; i++){
 	    tmpchr = Character.toLowerCase(input.charAt(i));
-	    if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 39)){ //if it's not in the alphabet or a hyphen
-		include(temp);
-		temp = "";
-	    }
-	    else if (tmpchr == 45){ //if it's an apostrophe
+	    if (tmpchr == 39 || tmpchr == 96){ //if it's an apostrophe
 		if (temp.length() <= 1){ //e.g. 'twas, '90s: decades are converted into "YYYYs" form, 'twas and other archaic language left alone
-		    
 		}
 		//contractions:
-		else if (temp.equals("won'")){			
+		else if (temp.equals("won")){			
 		    include("will");
 		    include("not");
 		    i++;
 		}
-		else if (temp.equals("can'")){
+		else if (temp.equals("can")){
 		    include("can");
 		    include("not");
 		    i++;
 		}
-		else if (temp.substring(temp.length()-2).equals("n'")){ //couldn't, hasn't, don't
-		    temp = temp.substring(0,temp.length()-2);
-		    include(temp);
+		else if (temp.charAt(temp.length()-1) == 'n'){ //couldn't, hasn't, don't
+		    include(temp.substring(0,temp.length()-2));
 		    include("not");
 		    temp = "";
 		    i++;
 		}
 		else if (input.charAt(i+1) == 'v') { //they've
-		    temp = temp.substring(0,temp.length()-2);
 		    include(temp);
 		    include("have");
 		    temp = "";
 		    i++;
 		}
 		else if (input.charAt(i+1) == 'l'){ //they'll
-		    temp = temp.substring(0,temp.length()-2);
 		    include(temp);
 		    include("will");
 		    i++;
 		}
-		else if (input.charAt(i+1) == 'd'){ // they'd (since this can either be "had" or "would", the 'd is fully neglected)
-		    temp = temp.substring(0,temp.length()-2);
+		else if (input.charAt(i+1) == 'd'){ // they'd (since this can either be "had" or "would", the 'd is neglected)
 		    include(temp);
 		    i++;
 		}
-		else{
-		    temp = temp + tmpchr;
+		else if (input.charAt(i+1) == 's'){//he's, Jake's;
+		    include(temp);
+		    i++;
+		}
+		else if (temp.charAt(0) == 'i'){ //neglect all use of "I'm"
+		    temp = "";
+		    i++;
 		}
 	    }
+	    else if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 45)){ //if it's not in the alphabet or a hyphen
+		if (temp.length() > 1){
+		    include(temp);
+		}
+		temp = "";
+	    }
+	    
+	    else{
+		temp = temp + tmpchr;
+	    }	    
 	}
+	include(temp);
 	relFreqs = new ArrayList<Double>(len/4);
 	buildRelFreqs();
+	System.out.println(relFreqs);
+	System.out.println(words);
+	System.out.println(counts);
     }
     
     public void include(String temp){
 	if (!words.contains(temp.toLowerCase())){
-	    System.out.println("add");
 	    words.add(temp.toLowerCase());
 	    counts.add(0);
 	}
 	int x = words.indexOf(temp);
-	System.out.println(x);
 	counts.set(x,counts.get(x) + 1);
 	wordcount++;
     }
