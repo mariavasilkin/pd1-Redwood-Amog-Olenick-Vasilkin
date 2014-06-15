@@ -7,5 +7,6 @@ public class Driver {
         writer.writeFile("http://en.wikipedia.org/wiki/Idina_Menzel", "IdinaMenzel");
         HTMLTagParser parser = new HTMLTagParser();
         parser.stripTags("IdinaMenzel.txt", "Idina_noTags");
+    }
        
 }
