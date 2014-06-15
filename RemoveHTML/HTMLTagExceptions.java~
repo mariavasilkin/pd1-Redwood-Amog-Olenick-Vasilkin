@@ -21,7 +21,9 @@ public class HTMLTagExceptions {
 	    e.printStackTrace();
 	}
 	
-
+	for (String s: tags) {
+	    System.out.println(s);
+	}
       
 
 	
@@ -35,7 +37,6 @@ public class HTMLTagExceptions {
 		OutputStreamWriter osw = new OutputStreamWriter(is);
 		Writer w = new BufferedWriter(osw);
 		String s = sc.next();
-		System.out.println(s);
 		w.write(s);
 		w.close();
 	    }
