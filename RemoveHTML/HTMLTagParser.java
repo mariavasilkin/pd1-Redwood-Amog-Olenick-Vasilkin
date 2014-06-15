@@ -3,7 +3,7 @@ import java.util.*;
 
 public class HTMLTagParser {
     private ArrayList<String> tags = new ArrayList<String>();
-    public void readFile(String filename, String name){
+    public void stripTags(String filename, String name){
         File webData = new File(filename);
         boolean isBody = false;
         try{
