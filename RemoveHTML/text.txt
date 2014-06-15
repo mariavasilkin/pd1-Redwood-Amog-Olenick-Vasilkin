@@ -1,2 +1,241 @@
+body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Animal_fancy skin-vector action-view vector-animateLayout">
+		div id="mw-page-base" class="noprint">/div>
+		div id="mw-head-base" class="noprint">/div>
+		div id="content" class="mw-body" role="main">
+			a id="top">/a>
+
+			div id="mw-js-message" style="display:none;">/div>
+							div id="siteNotice">!-- CentralNotice -->/div>
+						h1 id="firstHeading" class="firstHeading" lang="en">span dir="auto">Animal fancy/span>/h1>
+						div id="bodyContent" class="mw-body-content">
+									div id="siteSub">From Wikipedia, the free encyclopedia/div>
+								div id="contentSub">  (Redirected from a href="/w/index.php?title=Cat_fancy&amp;redirect=no" title="Cat fancy">Cat fancy/a>)/div>
+												div id="jump-to-nav" class="mw-jump">
+					Jump to:					a href="#mw-navigation">navigation/a>, 					a href="#p-search">search/a>
+				/div>
+				div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">div class="hatnote">"Dog fancy" and "Cat fancy" redirect here. For the magazines, see a href="/wiki/Dog_Fancy_(magazine)" title="Dog Fancy (magazine)">Dog Fancy (magazine)/a> and a href="/wiki/Cat_Fancy_(magazine)" title="Cat Fancy (magazine)">Cat Fancy (magazine)/a>./div>
+p>b>Animal fancy/b> is a a href="/wiki/Hobby" title="Hobby">hobby/a> involving the appreciation, promotion, or breeding of a href="/wiki/Pet" title="Pet">pet/a> or a href="/wiki/Domestic_animal" title="Domestic animal" class="mw-redirect">domestic animals/a>./p>
+p>Fancy may include ownership,sup id="cite_ref-1" class="reference">a href="#cite_note-1">span>[/span>1span>]/span>/a>/sup> showing, trialling and other competitions, a href="/wiki/Selective_breeding" title="Selective breeding">breeding/a> and judging. Hobbyists may simply collect specimens of the animal in appropriate enclosures, such as a href="/wiki/Aquarium" title="Aquarium">aquaria/a>,sup id="cite_ref-2" class="reference">a href="#cite_note-2">span>[/span>2span>]/span>/a>/sup> a href="/wiki/Vivarium" title="Vivarium">vivaria/a> and a href="/wiki/Aviary" title="Aviary">aviaries/a>. Fanciers with means may keep a href="/wiki/Hobby_farm" title="Hobby farm">hobby farms/a> or private a href="/wiki/Zoo" title="Zoo">zoos/a>. There are many animal fancy clubs and associations in the world catering for everything from a href="/wiki/Dove" title="Dove" class="mw-redirect">pigeons/a> to a href="/wiki/Irish_Wolfhound" title="Irish Wolfhound">Irish Wolfhounds/a>; members may own many animals or none at all./p>
+p>There are also many animal fancying hobbies that include keeping animals considered a href="/wiki/Exotic_pets" title="Exotic pets" class="mw-redirect">exotic pets/a>, such an example of a rapidly growing hobbysup id="cite_ref-3" class="reference">a href="#cite_note-3">span>[/span>3span>]/span>/a>/sup> is a href="/wiki/Herpetoculture" title="Herpetoculture">herpetoculture/a>- the keeping of a href="/wiki/Reptiles" title="Reptiles" class="mw-redirect">reptiles/a> and a href="/wiki/Amphibians" title="Amphibians" class="mw-redirect">amphibians/a>./p>
+h2>span class="mw-headline" id="Organizations">Organizations/span>span class="mw-editsection">span class="mw-editsection-bracket">[/span>a href="/w/index.php?title=Animal_fancy&amp;action=edit&amp;section=1" title="Edit section: Organizations">edit/a>span class="mw-editsection-bracket">]/span>/span>/h2>
+p>Some examples of animal fancy organizations are:/p>
+ul>
+li>The a href="/wiki/Governing_Council_of_the_Cat_Fancy" title="Governing Council of the Cat Fancy">Governing Council of the Cat Fancy/a> (GCCF) is the largest cat fancy organization in the United Kingdom. It was formed in 1910 and as of 2010, it comprises 146 affiliated cat clubs. It licenses cat shows and it issues around 30,000 pedigrees per year. The organization also conducts research into feline diseases through its charity, the Cat Welfare Trust.sup id="cite_ref-GCCF_4-0" class="reference">a href="#cite_note-GCCF-4">span>[/span>4span>]/span>/a>/sup>/li>
+li>The a href="/wiki/Cat_Fanciers%27_Association" title="Cat Fanciers' Association">Cat Fanciers' Association/a> (CFA) is the largest cat fancy organization in the United States and was formed in 1906. It has more than 600 member clubs and its work includes licensing cat shows, maintaining breed standards, registering cats and catteries, and running programs to encourage participation in the cat fancy.sup id="cite_ref-CFA_5-0" class="reference">a href="#cite_note-CFA-5">span>[/span>5span>]/span>/a>/sup>/li>
+li>The a href="/wiki/American_Poultry_Association" title="American Poultry Association">American Poultry Association/a> is the largest and oldest poultry organization in the world. It licences poultry shows and judges and compiles the a href="/wiki/American_Standard_of_Perfection" title="American Standard of Perfection">American Standard of Perfection/a>.sup id="cite_ref-6" class="reference">a href="#cite_note-6">span>[/span>6span>]/span>/a>/sup>/li>
+li>The a href="/wiki/Australian_National_Kennel_Council" title="Australian National Kennel Council">Australian National Kennel Council/a> is the supreme body for dogs in Australia. It registers dogs and maintains breed bloodlines, registers and approves judges, compiles and updates the breed standards for Dogs in Australia and acts as a regulating body for the a href="/wiki/Federal_state" title="Federal state" class="mw-redirect">state/a> kennel clubs, who in turn licence and organize dog shows.sup id="cite_ref-7" class="reference">a href="#cite_note-7">span>[/span>7span>]/span>/a>/sup>/li>
+/ul>
+h2>span class="mw-headline" id="See_also">See also/span>span class="mw-editsection">span class="mw-editsection-bracket">[/span>a href="/w/index.php?title=Animal_fancy&amp;action=edit&amp;section=2" title="Edit section: See also">edit/a>span class="mw-editsection-bracket">]/span>/span>/h2>
+ul>
+li>a href="/wiki/Cat_Fanciers%27_Association" title="Cat Fanciers' Association">Cat Fanciers' Association/a>/li>
+li>a href="/wiki/Cat_show" title="Cat show">Cat show/a>/li>
+li>a href="/wiki/Dog_breeding" title="Dog breeding">Dog breeding/a>/li>
+li>a href="/wiki/Conformation_dog_show" title="Conformation dog show" class="mw-redirect">Conformation dog show/a>/li>
+li>a href="/wiki/Dog_sports" title="Dog sports" class="mw-redirect">Dog sports/a>/li>
+li>a href="/wiki/Domestic_varieties_of_guinea_pigs" title="Domestic varieties of guinea pigs" class="mw-redirect">Domestic varieties of guinea pigs/a>/li>
+li>a href="/wiki/Fancy_mouse" title="Fancy mouse">Fancy mouse/a>/li>
+li>a href="/wiki/Fancy_rat" title="Fancy rat">Fancy rat/a>/li>
+li>a href="/wiki/GCCF" title="GCCF" class="mw-redirect">GCCF/a>/li>
+li>a href="/wiki/Horse_show" title="Horse show">Horse show/a>/li>
+li>a href="/wiki/Novelty_pet" title="Novelty pet" class="mw-redirect">Novelty pet/a>/li>
+li>a href="/wiki/Pigeon_keeping" title="Pigeon keeping">Pigeon keeping/a>/li>
+/ul>
+h2>span class="mw-headline" id="References">References/span>span class="mw-editsection">span class="mw-editsection-bracket">[/span>a href="/w/index.php?title=Animal_fancy&amp;action=edit&amp;section=3" title="Edit section: References">edit/a>span class="mw-editsection-bracket">]/span>/span>/h2>
+div class="reflist" style="list-style-type: decimal;">
+ol class="references">
+li id="cite_note-1">span class="mw-cite-backlink">b>a href="#cite_ref-1">^/a>/b>/span> span class="reference-text">i>Waiting for Wolves in Japan/i> By John Knight, Oxford University Press 2003, pg 212 a href="/wiki/Special:BookSources/0199255180" class="internal mw-magiclink-isbn">ISBN 0-19-925518-0/a>/span>/li>
+li id="cite_note-2">span class="mw-cite-backlink">b>a href="#cite_ref-2">^/a>/b>/span> span class="reference-text">i>Pennak's Freshwater Invertebrates of the United States/i> by Douglas Grant Smith, Robert William Pennak, 4th ed. John Wiley &amp; Sons 2001, pg 468 a href="/wiki/Special:BookSources/0471358371" class="internal mw-magiclink-isbn">ISBN 0-471-35837-1/a>/span>/li>
+li id="cite_note-3">span class="mw-cite-backlink">b>a href="#cite_ref-3">^/a>/b>/span> span class="reference-text">a rel="nofollow" class="external text" href="http://www.telegraph.co.uk/earth/3500882/Reptiles-now-more-popular-pets-than-dogs.html">i>Reptiles now more popular pets than dogs/i> By Jasper Copping, The Telegraph.c.uk 2008/a>/span>/li>
+li id="cite_note-GCCF-4">span class="mw-cite-backlink">b>a href="#cite_ref-GCCF_4-0">^/a>/b>/span> span class="reference-text">a rel="nofollow" class="external text" href="http://www.gccfcats.org/">Governing Council of the Cat Fancy/a>/span>/li>
+li id="cite_note-CFA-5">span class="mw-cite-backlink">b>a href="#cite_ref-CFA_5-0">^/a>/b>/span> span class="reference-text">a rel="nofollow" class="external text" href="http://www.cfainc.org/">Cat Fanciers' Association, U.S./a>/span>/li>
+li id="cite_note-6">span class="mw-cite-backlink">b>a href="#cite_ref-6">^/a>/b>/span> span class="reference-text">a rel="nofollow" class="external text" href="http://www.amerpoultryassn.com/">The American Poultry Association/a>/span>/li>
+li id="cite_note-7">span class="mw-cite-backlink">b>a href="#cite_ref-7">^/a>/b>/span> span class="reference-text">a rel="nofollow" class="external text" href="http://www.ankc.org.au/default.aspx">Australian National Kennel Council/a>/span>/li>
+/ol>
+/div>
+
+
+!-- 
+NewPP limit report
+Parsed by mw1044
+CPU time usage: 0.116 seconds
+Real time usage: 0.132 seconds
+Preprocessor visited node count: 189/1000000
+Preprocessor generated node count: 884/1500000
+Post-expand include size: 459/2048000 bytes
+Template argument size: 0/2048000 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/500
+Lua time usage: 0.005/10.000 seconds
+Lua memory usage: 511 KB/50 MB
+-->
+
+!-- Saved in parser cache with key enwiki:pcache:idhash:30873441-0!*!0!!*!*!* and timestamp 20140525113335 and revision id 603318386
+ -->
+noscript>img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" />/noscript>/div>									div class="printfooter">
+						Retrieved from "a dir="ltr" href="http://en.wikipedia.org/w/index.php?title=Animal_fancy&amp;oldid=603318386">http://en.wikipedia.org/w/index.php?title=Animal_fancy&amp;oldid=603318386/a>"					/div>
+													div id='catlinks' class='catlinks'>div id="mw-normal-catlinks" class="mw-normal-catlinks">a href="/wiki/Help:Category" title="Help:Category">Categories/a>: ul>li>a href="/wiki/Category:Pets" title="Category:Pets">Pets/a>/li>/ul>/div>/div>												div class="visualClear">/div>
+							/div>
+		/div>
+		div id="mw-navigation">
+			h2>Navigation menu/h2>
+
+			div id="mw-head">
+									div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						h3 id="p-personal-label">Personal tools/h3>
+						ul>
+							li id="pt-createaccount">a href="/w/index.php?title=Special:UserLogin&amp;returnto=Animal+fancy&amp;type=signup">Create account/a>/li>li id="pt-login">a href="/w/index.php?title=Special:UserLogin&amp;returnto=Animal+fancy" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in/a>/li>						/ul>
+					/div>
+									div id="left-navigation">
+										div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						h3 id="p-namespaces-label">Namespaces/h3>
+						ul>
+															li  id="ca-nstab-main" class="selected">span>a href="/wiki/Animal_fancy"  title="View the content page [c]" accesskey="c">Article/a>/span>/li>
+															li  id="ca-talk">span>a href="/wiki/Talk:Animal_fancy"  title="Discussion about the content page [t]" accesskey="t">Talk/a>/span>/li>
+													/ul>
+					/div>
+										div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+						h3 id="mw-vector-current-variant">
+													/h3>
+
+						h3 id="p-variants-label">span>Variants/span>a href="#">/a>/h3>
+
+						div class="menu">
+							ul>
+															/ul>
+						/div>
+					/div>
+									/div>
+				div id="right-navigation">
+										div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						h3 id="p-views-label">Views/h3>
+						ul>
+															li id="ca-view" class="selected">span>a href="/wiki/Animal_fancy" >Read/a>/span>/li>
+															li id="ca-edit">span>a href="/w/index.php?title=Animal_fancy&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit/a>/span>/li>
+															li id="ca-history" class="collapsible">span>a href="/w/index.php?title=Animal_fancy&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history/a>/span>/li>
+													/ul>
+					/div>
+										div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						h3 id="p-cactions-label">span>More/span>a href="#">/a>/h3>
+
+						div class="menu">
+							ul>
+															/ul>
+						/div>
+					/div>
+										div id="p-search" role="search">
+						h3>
+							label for="searchInput">Search/label>
+						/h3>
+
+						form action="/w/index.php" id="searchform">
+														div id="simpleSearch">
+															input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" />input type="hidden" value="Special:Search" name="title" />input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" />input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton" />								/div>
+						/form>
+					/div>
+									/div>
+			/div>
+			div id="mw-panel">
+				div id="p-logo" role="banner">a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page">/a>/div>
+						div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			h3 id='p-navigation-label'>Navigation/h3>
+
+			div class="body">
+									ul>
+													li id="n-mainpage-description">a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page/a>/li>
+													li id="n-contents">a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents/a>/li>
+													li id="n-featuredcontent">a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content/a>/li>
+													li id="n-currentevents">a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events/a>/li>
+													li id="n-randompage">a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article/a>/li>
+													li id="n-sitesupport">a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia/a>/li>
+													li id="n-shoplink">a href="//shop.wikimedia.org" title="Visit the Wikimedia Shop">Wikimedia Shop/a>/li>
+											/ul>
+							/div>
+		/div>
+			div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			h3 id='p-interaction-label'>Interaction/h3>
+
+			div class="body">
+									ul>
+													li id="n-help">a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help/a>/li>
+													li id="n-aboutsite">a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia/a>/li>
+													li id="n-portal">a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal/a>/li>
+													li id="n-recentchanges">a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes/a>/li>
+													li id="n-contactpage">a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page/a>/li>
+											/ul>
+							/div>
+		/div>
+			div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			h3 id='p-tb-label'>Tools/h3>
+
+			div class="body">
+									ul>
+													li id="t-whatlinkshere">a href="/wiki/Special:WhatLinksHere/Animal_fancy" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here/a>/li>
+													li id="t-recentchangeslinked">a href="/wiki/Special:RecentChangesLinked/Animal_fancy" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes/a>/li>
+													li id="t-upload">a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file/a>/li>
+													li id="t-specialpages">a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages/a>/li>
+													li id="t-permalink">a href="/w/index.php?title=Animal_fancy&amp;oldid=603318386" title="Permanent link to this revision of the page">Permanent link/a>/li>
+													li id="t-info">a href="/w/index.php?title=Animal_fancy&amp;action=info">Page information/a>/li>
+													li id="t-wikibase">a href="//www.wikidata.org/wiki/Q4764936" title="Link to connected data repository item [g]" accesskey="g">Data item/a>/li>
+						li id="t-cite">a href="/w/index.php?title=Special:Cite&amp;page=Animal_fancy&amp;id=603318386" title="Information on how to cite this page">Cite this page/a>/li>					/ul>
+							/div>
+		/div>
+			div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			h3 id='p-coll-print_export-label'>Print/export/h3>
+
+			div class="body">
+									ul>
+													li id="coll-create_a_book">a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Animal+fancy">Create a book/a>/li>
+													li id="coll-download-as-rl">a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Animal+fancy&amp;oldid=603318386&amp;writer=rl">Download as PDF/a>/li>
+													li id="t-print">a href="/w/index.php?title=Animal_fancy&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version/a>/li>
+											/ul>
+							/div>
+		/div>
+			div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			h3 id='p-lang-label'>Languages/h3>
+
+			div class="body">
+									ul>
+													li class="interlanguage-link interwiki-ar">a href="//ar.wikipedia.org/wiki/%D9%87%D9%88%D8%A7%D9%8A%D8%A9_%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D9%8A%D8%A9_%D8%A8%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D8%A7%D8%AA" title="????? ??????? ?????????? – Arabic" lang="ar" hreflang="ar">???????/a>/li>
+													li class="uls-p-lang-dummy">a href="#">/a>/li>
+											/ul>
+				div class='after-portlet after-portlet-lang'>span class="wb-langlinks-edit wb-langlinks-link">a action="edit" href="//www.wikidata.org/wiki/Q4764936#sitelinks-wikipedia" text="Edit links" title="Edit interlanguage links" class="wbc-editpage">Edit links/a>/span>/div>			/div>
+		/div>
+				/div>
+		/div>
+		div id="footer" role="contentinfo">
+							ul id="footer-info">
+											li id="footer-info-lastmod"> This page was last modified on 8 April 2014 at 15:58.br />/li>
+											li id="footer-info-copyright">Text is available under the a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License/a>a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;">/a>;
+additional terms may apply.  By using this site, you agree to the a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use/a> and a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy/a>. Wikipedia® is a registered trademark of the a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc./a>, a non-profit organization./li>
+									/ul>
+							ul id="footer-places">
+											li id="footer-places-privacy">a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy/a>/li>
+											li id="footer-places-about">a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia/a>/li>
+											li id="footer-places-disclaimer">a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers/a>/li>
+											li id="footer-places-contact">a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia/a>/li>
+											li id="footer-places-developers">a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers/a>/li>
+											li id="footer-places-mobileview">a href="//en.m.wikipedia.org/wiki/Animal_fancy" class="noprint stopMobileRedirectToggle">Mobile view/a>/li>
+									/ul>
+										ul id="footer-icons" class="noprint">
+											li id="footer-copyrightico">
+															a href="//wikimediafoundation.org/">img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/>/a>
+													/li>
+											li id="footer-poweredbyico">
+															a href="//www.mediawiki.org/">img src="//bits.wikimedia.org/static-1.24wmf8/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" />/a>
+													/li>
+									/ul>
+						div style="clear:both">/div>
+		/div>
+		script>/*![CDATA[*/window.jQuery && jQuery.ready();/*]]>*//script>script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}/script>
+script>if(window.mw){
+mw.loader.load(["ext.cite","mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","mw.MwEmbedSupport.style","ext.gettingstarted.assignToken","ext.eventLogging.subscriber","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"],null,true);
+}/script>
+script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*">/script>
+script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":280,"wgHostname":"mw1045"});
+}/script>
+	/body>
 /html>
 	

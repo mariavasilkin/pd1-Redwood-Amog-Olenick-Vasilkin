@@ -32,17 +32,18 @@ public class HTMLTagExceptions {
 	    FileOutputStream is = new FileOutputStream(processedText);
 	    OutputStreamWriter osw = new OutputStreamWriter(is);
 	    Writer w = new BufferedWriter(osw);
+	    boolean isBody = false;
 	    while (sc.hasNextLine()) {
-		boolean isBody = false;
 		String s = sc.next();
-		if ((s.substring("0,6")).equals("body>")){
+		if (s.length() > 5 &&
+		    (s.substring(0,4)).equals("body")){
 		    isBody = true;
 		}
 		if (isBody) {
-		    System.out.println(s);
+		    w.write(s);
 		}
 	    }
-	    w.write(s);
+	    // w.write(s);
 	    w.close();
 	}
 	catch (IOException e) {
