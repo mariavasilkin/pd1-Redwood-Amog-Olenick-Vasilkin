@@ -4,11 +4,9 @@ import java.io.*;
 public class URLReader {
     public static void main(String[] args) throws Exception {
 	//	try {
-<<<<<<< HEAD
+
 	    URL site = new URL("http://en.wikipedia.org/wiki/HTTP_404");
-=======
-	    URL site = new URL("http://news.ycombinator.com");
->>>>>>> 3b09dea845da494cc5149c8bd55e1f0252acf641
+
 	    URLConnection c = site.openConnection();
 	    
 	    HttpURLConnection con = (HttpURLConnection)c; 
