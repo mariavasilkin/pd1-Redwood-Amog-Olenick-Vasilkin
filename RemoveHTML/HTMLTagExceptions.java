@@ -25,17 +25,16 @@ public class HTMLTagExceptions {
 	}
       }
 }
-    //comment out the rest to show the part that alreadu works
 	
+	/*
+	File FullWiki = new File("Wiki.txt");
 	
-    File FullWiki = new File("Wiki.txt");
-	
-    try {
-	Scanner sc = new  Scanner(FullWiki).useDelimiter("<");
+	try {
+	    Scanner sc = new  Scanner(FullWiki).useDelimiter("<");
 	    
-	while (sc.hasNextLine()) {
-	    String s = sc.next();
-	    if ((s.substring(0,2)).equals("i>")) {
-		while (//basically until theres the close tag, concat to one string
-		       }
+	    while (sc.hasNextLine()) {
+		String s = sc.next();
+		if ((s.substring(0,2)).equals("i>")) {
+		    while (//basically until theres the close tag, concat to one string
+		    }*/
     
