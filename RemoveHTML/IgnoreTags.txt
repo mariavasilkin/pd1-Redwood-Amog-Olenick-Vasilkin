@@ -1,6 +1,10 @@
 href
 html
 /html>
+p
+div
+div
+/p
 tr
 /tr>
 table
@@ -17,3 +21,5 @@ a
 /a>
 span>
 /span>
+meta
+link
