@@ -3,7 +3,7 @@ import java.io.*;
 
 public class URLReader {
     public static void main(String[] args) throws Exception {
-	//	try {
+	try {
 
 	    URL site = new URL("http://en.wikipedia.org/wiki/HTTP_404");
 
@@ -30,10 +30,10 @@ public class URLReader {
 		System.out.println(inputLine);
 	    in.close();
 	    	    
-//	}
-	/*	catch(Exception e){
+	}
+	catch(Exception e){
 	    System.out.println("failed");
-	    }*/
+	}
 
     }
 }
