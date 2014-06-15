@@ -32,3 +32,5 @@ Date: Name. what you did.
 
 06/09/14: Maria. Got quite a bit done for processing. Currently have a bloom file that mades a circle burst out, which would presumably be used to show the child nodes popping up after you select a new node. Also a SlideUp file in which the node moves to the place of the parent. So far this one only works for child1. I don't know how to incorporate these together though. 
 
+06/14/14: Anjelika. URLReader works fine and now the contents of a URL read out to a file.
+
