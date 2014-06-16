@@ -6,6 +6,8 @@ void setup() {
   fill(0,20,220);
   
 }
+//void whichChild() {
+  
 void draw() {
  background(0);
  fill(0,20,220);

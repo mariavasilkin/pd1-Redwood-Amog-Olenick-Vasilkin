@@ -39,10 +39,11 @@ public class HTMLTagExceptions {
 		    (s.substring(0,4)).equals("body")){
 		    isBody = true;
 		}
+		//doesn't show the whole thing
 		if (s.length() > 20 &&
 		    (s.substring(0,19)).equals("div class=\"hatnote\"")){
 		    System.out.println(s.substring(19));
-		    }
+		}
 	  
 		for (String tag: tags){
 		    //tons of "if"s to account for the differnt lengths of tags
