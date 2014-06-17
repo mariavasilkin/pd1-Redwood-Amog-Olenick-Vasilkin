@@ -38,3 +38,4 @@ Worked on removing HTML tags.
 
 06/14/14: Anjelika. URLReader works fine and now the contents of a URL read out to a file.
 
+06/16/14: Made a processing sketch with all of the java done so far, but it's not letting me run it for some reason???? I'm 86% sure that there aren't any erros though. Processing clearly didn;t completely work, so I tried to make a command line input version of the driver that lets you input your search, but that also didn't completely work yet. 
