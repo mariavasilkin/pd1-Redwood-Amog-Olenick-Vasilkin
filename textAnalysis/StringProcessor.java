@@ -27,13 +27,15 @@ public class StringProcessor{
 	for (int i = 0; i < len; i++){
 	    tmpchr = Character.toLowerCase(input.charAt(i));
 	    if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 39 || tmpchr == 45)){ //if it's not in the alphabet, a hyphen, or an apostrophe
-		if (!words.contains(temp.toLowerCase())){
-		    words.add(temp.toLowerCase());
-		    counts.add(0);
+		if (temp.length() > 1){
+		    if (!words.contains(temp.toLowerCase())){
+			words.add(temp.toLowerCase());
+			counts.add(0);
+		    }
+		    int x = words.indexOf(temp);
+		    counts.set(x,counts.get(x) + 1);
+		    wordcount++;
 		}
-		int x = words.indexOf(temp);
-		counts.set(x,counts.get(x) + 1);
-		wordcount++;
 		temp = "";
 	    }
 	    else{
@@ -65,7 +67,7 @@ public class StringProcessor{
 
     public String[] mainWords(int numWords){
 	String[] out = new String[numWords];
-	Double[] freqArray = (Double[])relFreqs.toArray();
+	Double[] freqArray = relFreqs.toArray(new Double[numWords]);
 	Double[] topNFreqs = quickSelect(freqArray, numWords);
 	for (int i = 0; i < numWords; i++){
 	    out[i] = words.get(relFreqs.indexOf(topNFreqs[i]));
@@ -108,6 +110,9 @@ public class StringProcessor{
     }
     
     public Double[] quickSelect(Double[] a, int k){//returns top K items
+	//works by partially sorting "a" in increasing order
+	if (a.length == k)
+	    return a;
 	Double[] result = new Double[k];
 	Double[] alt = new Double[a.length];
 	Random r = new Random();
@@ -115,7 +120,9 @@ public class StringProcessor{
 	int altind = 0; 
 	int altind2 = 0;
 	for (int i = 0; i<a.length; i++){
-	    if (a[i].compareTo(a[ind]) <= 0){
+	    if (i == ind){
+	    }
+	    else if (a[i].compareTo(a[ind]) <= 0){
 		alt[altind] = a[i];
 		altind++;
 	    }
@@ -124,26 +131,26 @@ public class StringProcessor{
 		altind2++;
 	    }
 	}
-	if (altind+1 == k){
+	alt[altind] = a[ind];
+	if ((a.length - (altind+1)) == k){
 	    result = Arrays.copyOfRange(alt,k,a.length);
 	}
-	else{
-	    if (altind+1 < k){
-		Double[] newAlt = Arrays.copyOfRange(a,0,altind);
-		Double[] result1 = Arrays.copyOfRange(a,altind,a.length);
-		Double[] result2 = quickSelect(newAlt,k-altind-1);
-		for (int i = 0; i < k; i++){
-		    if (i < result1.length)
-			result[i] = result1[i];
-		    else
-			result[i] = result2[i - result1.length];
-		}
-	    }
-	    else{
-		Double[] newAlt = Arrays.copyOfRange(a, altind, a.length);
-		return quickSelect(newAlt,k);
+	else if ((a.length - (altind+1)) < k){
+	    Double[] newAlt = Arrays.copyOfRange(alt,0,altind);
+	    Double[] result1 = Arrays.copyOfRange(alt,altind,a.length);
+	    Double[] result2 = quickSelect(newAlt,k-result1.length);
+	    for (int i = 0; i < k; i++){
+		if (i < result1.length)
+		    result[i] = result1[i];
+		else
+		    result[i] = result2[i - result1.length];
 	    }
 	}
+	else{
+	    Double[] newAlt = Arrays.copyOfRange(alt, altind, a.length);
+	    return quickSelect(newAlt,k);
+	}	
+	
 	return result;
     }
 }
