@@ -1,22 +1,15 @@
-
 import java.io.*;
 import java.util.*;
 import java.net.*;
 
 public class TextConverter {
-    private String myURL;
-    private String filename;
-    
-    public TextConverter(String website, String name){
-         myURL = website;
-         filename = name;
-    }
+    private String fileName;
     
     //from URLtoFile
-    public String readURL() {
+    public String readURL(String website) {
     
         try {
-	        URL site = new URL(myURL);
+	        URL site = new URL(website);
 	        URLConnection c = site.openConnection();
 	        HttpURLConnection con = (HttpURLConnection)c; 
 	        con.setRequestMethod("GET");
@@ -44,10 +37,10 @@ public class TextConverter {
 	    }
     }   
 
-    public void writeHTMLFile(){
+    public void writeHTMLFile(String website, String name){
         try{
-            String textToWrite = readURL();
-            BufferedWriter out = new BufferedWriter( new FileWriter(filename + ".txt") );
+            String textToWrite = readURL(website);
+            BufferedWriter out = new BufferedWriter( new FileWriter(name + ".txt") );
             out.write(textToWrite);
             System.out.println("this should be writing");
         }
@@ -57,8 +50,8 @@ public class TextConverter {
     }
     
     //from HTMLTagParser
-    public void stripTags(){
-        File webData = new File(filename + ".txt");
+    public void stripTags(String filename, String name){
+        File webData = new File(filename);
         boolean isBody = false;
         try{
             int i = 0;
@@ -74,13 +67,13 @@ public class TextConverter {
             }
             
             String text = "";
-            BufferedWriter out = new BufferedWriter( new FileWriter(filename + "NoTags.txt") );
+            BufferedWriter out = new BufferedWriter( new FileWriter(name + ".txt") );
             while (sc.hasNextLine()){
                 try{
                      line = sc.nextLine();
                      text = checkTag(line);
-                     //System.out.println(text);
                      out.write("\n" + text);
+                     //System.out.println(text);
                      i++;
                 }
                 catch(Error e){
@@ -110,9 +103,9 @@ public class TextConverter {
     }
     
     //to read contents of a file into one string -- to input to the textAnalysis stuff
-    public String convertString(){
+    public String convertString(String filename){
         try {
-            Scanner sc = new Scanner( new File(filename + "NoTags.txt") );
+            Scanner sc = new Scanner( new File(filename) );
             String allTheText = "";
             while (sc.hasNextLine()){
                 allTheText += "\n" + sc.nextLine();
@@ -124,10 +117,12 @@ public class TextConverter {
         }
     } 
     
-    public String fromURLtoText (){
-        writeHTMLFile();
-        stripTags();
-        return convertString();
+    public String fromURLtoText (String website, String name){
+        writeHTMLFile(website, name);
+        String filename = name + ".txt";
+        stripTags(filename, name + "NoTags");
+        String notags = name + "NoTags.txt";
+        return convertString(notags);
     }
     
 }
