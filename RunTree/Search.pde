@@ -14,47 +14,28 @@ class Search {
   void updateTime() {
      time = millis();
   }
-  void bloom(int child) {
-    if (child == 1) {
+  void bloom() {
       XCor = 50;
       YCor = 450;
-    }
-    else if (child == 2) {
-      XCor = 200;
-      YCor = 450;
-    }
-    else if (child == 3) {
-      XCor = 350;
-      YCor = 450;
-    }
-    else if (child == 4) {
-      XCor = 500;
-      YCor = 450;
-    }
-    else if (child == 5) {
-      XCor = 650;
-      YCor = 450;
-    }
-    else {};
-     while ((millis() - time) > 50) {
-       if (radius < 100) {
-         stroke(255,255,255);
-         ellipse(XCor,YCor,radius,radius);
-         fill(255);
-         ellipse(XCor,YCor,radius,radius);
-         radius += 5;
-         time = millis();
-       }
-       else return;
-     }
-   
+      for (int i = 0; i < 5; i ++) {
+        // updateTime();
+         while ((millis() - time) > 50) {
+           if (radius < 100) {
+             stroke(255,255,255);
+             ellipse(XCor,YCor,radius,radius);
+             fill(255);
+             ellipse(XCor,YCor,radius,radius);
+             radius += 5;
+             time = millis();
+           } 
+           else return;
+        }
+        XCor += 150;
+
+      }
   }
   void draw() {
-      bloom(1);
-      bloom(2);
-      bloom(3);
-      bloom(4);
-      bloom(5);
+    bloom();
       
   }
 }

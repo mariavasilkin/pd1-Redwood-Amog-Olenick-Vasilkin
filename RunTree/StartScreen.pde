@@ -1,21 +1,29 @@
 class StartScreen{
-  String search;
+  //Search search;
+  String input = "";
+  String typing= "";
+  PFont f = createFont("Arial", 20, true);
   StartScreen() {
-      fill(130);
+    f = createFont("Arial", 20, true);
   }
-  void draw() {
-         ellipse(100,900,50,50);
-  }
-/*  void keyReleased() {
+
+  void keyReleased() {
     if (key != CODED) {
       switch(key) {
       case BACKSPACE:
-        search = search.substring(0,max(0,search.length()-1));
-      case ENTER :
-//want to close the text thing here
-        Search(search);
+        typing = typing.substring(0,max(0,typing.length()-1));
+       case ENTER :
+         input = typing;
+        //search = new Search(input);
       default:
-        search += key;
+        typing += key;
       }
-    }*/
-} 
+     }
+  }
+  void draw() {
+     textFont(f);
+     fill(0);
+     text(typing, 125, 70);
+
+  }
+}   

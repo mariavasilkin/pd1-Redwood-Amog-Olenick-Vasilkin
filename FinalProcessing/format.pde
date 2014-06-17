@@ -75,6 +75,7 @@ public class format {
       } // exception thrown if some items in arr are null
       return false;
     }
+    return false;
   }
 }
 
