@@ -6,16 +6,16 @@ class Search {
   int radius = 0;
   Search() {
     XCor = 0;
-    YCor = 1;
+    YCor = 0;
   }
   Search(String search) {
     parent = search;
   }
-  void setTime(int t) {
-     time = t;
+  void updateTime() {
+     time = millis();
   }
   void bloom(int child) {
-        if (child == 1) {
+    if (child == 1) {
       XCor = 50;
       YCor = 450;
     }
@@ -47,8 +47,9 @@ class Search {
        }
        else return;
      }
+   
+  }
   void draw() {
-      ellipse(800,800,50,50);
       bloom(1);
       bloom(2);
       bloom(3);

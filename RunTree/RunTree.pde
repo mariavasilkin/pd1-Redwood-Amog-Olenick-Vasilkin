@@ -1,9 +1,9 @@
 //Bloom b = new Bloom(3);
-StartScreen s = new StartScreen();
+Search s = new Search();
 void setup() {
   size(1000,1000);
   background(0);
-  s.setTime(millis());
+  s.updateTime();
 }
 void draw() {
   s.draw();

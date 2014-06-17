@@ -26,11 +26,15 @@ Date: Name. what you did.
 
 06/06/14: Jake. Began to work on determining if words come from the same root word or not.
 
-06/06/14 - 06/08/14: Worked on getting the processing stuff to work with the java stuff. Failed miserably.
+06/06/14 - 06/08/14: Maria. Worked on getting the processing stuff to work with the java stuff. Failed miserably.
 
 06/09/14: Jake. Did so many things omg. Mainly, used a quickSelect algorithm to get the keywords (referred to as "mainWords", idk why I did that) and also created a means of determining irregular noun plurals.
 
 06/09/14: Maria. Got quite a bit done for processing. Currently have a bloom file that mades a circle burst out, which would presumably be used to show the child nodes popping up after you select a new node. Also a SlideUp file in which the node moves to the place of the parent. So far this one only works for child1. I don't know how to incorporate these together though. 
+
+06/13/14-06/15/14(weekend): Maria. Tried to combine the stuff in the different sketches into one file, but it didn't completely work.
+Worked on removing HTML tags.
+
 
 06/14/14: Anjelika. URLReader works fine and now the contents of a URL read out to a file.
 
