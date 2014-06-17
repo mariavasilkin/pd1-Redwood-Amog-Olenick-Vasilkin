@@ -17,21 +17,40 @@ public class StringArrayList extends ArrayList<String>{
 		    return true;
 	}
 	else {
-	    while (e.hasNext())
+	    while (e.hasNext()){
 		if (isSameRootWord(s,e.next()))
 		    return true;
+	    }
 	}
 	return false;
     }
+
+    public int indexOf(Object o) {
+	String s = (String)o;
+	if (s == null) {
+	    for (int i = 0; i < size(); i++)
+		if (get(i)==null)
+		    return i;
+	} else {
+	    for (int i = 0; i < size(); i++)
+		if (isSameRootWord(s,get(i)))
+		    return i;
+	}
+	return -1;
+     }
     
-    public boolean isSameRootWord(String a, String b){ //in progress
-	String one = a.toUpperCase();
-	String two = b.toUpperCase();
-	boolean result = false;
+    public static boolean isSameRootWord(String a, String b){ //in progress
+	String one = a.toLowerCase();
+	String two = b.toLowerCase();
+	boolean result = false;;
 	if (one.length() >= 3){
-	    if (one.equals(two + "s") || two.equals(one + "s"))
+	    if (((one.indexOf(two) != -1 && one.indexOf("s") == one.length())) 
+		|| (two.indexOf(one) != -1 && two.indexOf("s") == two.length()-1 ))
 		result = true;
+	    
 	}	
+	if (one.equals(two))
+	    result = true;
 	return result;
     }
 }

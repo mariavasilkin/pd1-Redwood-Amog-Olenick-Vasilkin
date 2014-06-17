@@ -28,12 +28,15 @@ public class StringProcessor{
 	    tmpchr = Character.toLowerCase(input.charAt(i));
 	    if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 39 || tmpchr == 45)){ //if it's not in the alphabet, a hyphen, or an apostrophe
 		if (temp.length() > 1){
-		    if (!words.contains(temp.toLowerCase())){
-			words.add(temp.toLowerCase());
-			counts.add(0);
+		    temp = temp.toLowerCase();
+		    if (!words.contains(temp)){
+			include(temp);
 		    }
-		    int x = words.indexOf(temp);
-		    counts.set(x,counts.get(x) + 1);
+		    else{
+			int x = words.indexOf(temp);
+			int y = counts.get(x);
+			counts.set(x,y + 1);
+		    }
 		    wordcount++;
 		}
 		temp = "";
@@ -96,11 +99,11 @@ public class StringProcessor{
 	include(temp);
 	relFreqs = new ArrayList<Double>(len/4);
 	buildRelFreqs();
-	System.out.println(relFreqs);
-	System.out.println(words);
-	System.out.println(counts);
+	removeIrrelevancies();
     }
     
+
+
     public void include(String temp){
 	if (!words.contains(temp.toLowerCase())){
 	    words.add(temp.toLowerCase());
@@ -134,6 +137,7 @@ public class StringProcessor{
 	String[] out = new String[numWords];
 	Double[] freqArray = relFreqs.toArray(new Double[numWords]);
 	Double[] topNFreqs = quickSelect(freqArray, numWords);
+	System.out.println(Arrays.toString(topNFreqs));
 	for (int i = 0; i < numWords; i++){
 	    out[i] = words.get(relFreqs.indexOf(topNFreqs[i]));
 	}
@@ -156,26 +160,38 @@ public class StringProcessor{
 	    relFreqs.set(i, (freq/objFreq));
 	}
     }
-    
-    public boolean isSameRootWord(String a, String b){ //GET BACK TO THIS
-	String lastTwo = a.substring(a.length() - 2);
-	if (lastTwo.equals("ch") ||
-	    lastTwo.substring(1).equals("s")){
-	    return true;
+
+    private void removeIrrelevancies(){
+	for (int i = 0; i < words.size(); i++){
+	    String s = words.get(i);
+	    if(s.equals("the") || s.equals("be") || s.equals("and") || s.equals("of")||
+	       s.equals("in") || s.equals("to") || s.equals("have") || s.equals("it") ||
+	       s.equals("that") || s.equals("for") || s.equals("you") || s.equals("he") ||
+	       s.equals("with") || s.equals("on") || s.equals("do") || s.equals("say") ||
+	       s.equals("are") || s.equals("is") || s.equals("was") || s.equals("at") ||
+	       s.equals("but") || s.equals("not") || s.equals("or") || s.equals("as")){
+		words.remove(i);
+		counts.remove(i);
+		relFreqs.remove(i);
+	    }
 	}
-	return false;
     }
     
-    private int findArray (String[][] arr, String goal, int idx){ //finds the array in 2-d array arr such that the item at index idx is goal
+    public boolean isSameRootWord(String a, String b){
+	return StringArrayList.isSameRootWord(a,b);
+    }
+    
+    private int findArray (String[][] arr, String goal, int idx){ 
+	//finds the array in 2-d array arr such that the item at index idx is goal
 	for (int i = 0; i < arr.length; i++){
-	    if (arr[i][idx].equals(goal))
+	    if (isSameRootWord(arr[i][idx],goal))
 		return i;
 	}   
 	return -1;
     }
     
-    public Double[] quickSelect(Double[] a, int k){//returns top K items
-	//works by partially sorting "a" in increasing order
+    public Double[] quickSelect(Double[] a, int k){
+	//returns top K items
 	if (a.length == k)
 	    return a;
 	Double[] result = new Double[k];
