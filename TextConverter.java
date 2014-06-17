@@ -9,7 +9,7 @@ public class TextConverter {
     
     public TextConverter(String website, String name){
          myURL = website;
-         filename = name;
+         filename = "textStorage/" + name;
     }
     
     //from URLtoFile
