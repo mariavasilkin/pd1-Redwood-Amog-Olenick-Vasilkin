@@ -14,6 +14,7 @@ public class format{
 	    //source: http://www.wordfrequency.info/free.asp?s=y
 	}
 	catch(Exception e){
+	    System.out.println("YOU IDJIT, IT'S CALLED database.txt FOR A REASON");
 	    sc = new Scanner(System.in);
 	}
 	sc.nextLine();
@@ -38,6 +39,7 @@ public class format{
 	    //http://grammar.about.com/od/words/a/A-List-Of-Irregular-Plural-Nouns-In-English.htm
 	}
 	catch (Exception e){
+	    System.out.println("YOU IDJIT, IT'S CALLED irregularNouns.txt FOR A REASON");
 	    sc2 = new Scanner(System.in);
 	}
 	irregularNouns = new String[200][4];

@@ -132,6 +132,16 @@ public class StringProcessor{
     public int getOccurs (String word){
 	return counts.get(words.indexOf(word));
     }
+    public int getGenerality (){ 
+	//concept: for every word in words which is also in the top 5000 most common words,  add 1 to the output of this method
+	int result = 0;
+	for (int i = 0; i < words.size(); i++){
+	    if (findArray(database, words.get(i), 0) != -1){
+		result++;
+	    }
+	}
+	return result;
+    }
 
     public String[] mainWords(int numWords){
 	String[] out = new String[numWords];
