@@ -20,7 +20,7 @@ public class StringProcessor{
 	database = f.database;
 	irregularNouns = f.irregularNouns;
 	int len = input.length();
-	words = new MyArrayList<String>(len/4); //assumes average word length of 4
+	words = new StringArrayList(len/4); //assumes average word length of 4
 	counts = new ArrayList<Integer>(len/4);
 	String temp = "";//each word
 	char tmpchr = ' ';//each character, one at a time
