@@ -1,6 +1,7 @@
-total: 450,000,000
 
-Rank	   Word	PoS	Frequency	Dispersion
+
+0	nwrg	k	0		0.0
+0	anfownef	r		0	0.0
 1	   the	a	22038615	0.98
 2	   be	v	12545825	0.97
 3	   and	c	10741073	0.99

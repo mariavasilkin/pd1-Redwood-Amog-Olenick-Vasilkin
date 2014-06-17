@@ -154,7 +154,10 @@ public class StringProcessor{
 	    if (findArray(database,word,0) == -1)
 		objFreq = 0.000008889; // this is equivalent to 4,000 per 450,000,000; less than any other word in this particular database
 	    else{
-		objFreq = Double.parseDouble(database[findArray(database,word,0)][2]) / 450000000.0;
+		if ((database[findArray(database,word,0)][2]).equals("Frequency"))
+		    System.out.println(words.get(i));
+		
+		objFreq = (Integer.parseInt(database[findArray(database,word,0)][2]) + 0.0) / 450000000.0;
 	    }
 	    freq = (0.0 + counts.get(i)) / (0.0 + wordcount);
 	    relFreqs.set(i, (freq/objFreq));
@@ -169,7 +172,8 @@ public class StringProcessor{
 	       s.equals("that") || s.equals("for") || s.equals("you") || s.equals("he") ||
 	       s.equals("with") || s.equals("on") || s.equals("do") || s.equals("say") ||
 	       s.equals("are") || s.equals("is") || s.equals("was") || s.equals("at") ||
-	       s.equals("but") || s.equals("not") || s.equals("or") || s.equals("as")){
+	       s.equals("but") || s.equals("not") || s.equals("or") || s.equals("as") ||
+	       s.equals("an") || s.equals("were")){
 		words.remove(i);
 		counts.remove(i);
 		relFreqs.remove(i);
@@ -186,7 +190,7 @@ public class StringProcessor{
 	for (int i = 0; i < arr.length; i++){
 	    if (isSameRootWord(arr[i][idx],goal))
 		return i;
-	}   
+	}
 	return -1;
     }
     
