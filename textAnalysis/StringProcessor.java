@@ -26,6 +26,7 @@ public class StringProcessor{
 	char tmpchr = ' ';//each character, one at a time
 	for (int i = 0; i < len; i++){
 	    tmpchr = Character.toLowerCase(input.charAt(i));
+<<<<<<< HEAD
 	    if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 39 || tmpchr == 45)){ //if it's not in the alphabet, a hyphen, or an apostrophe
 		if (temp.length() > 1){
 		    if (!words.contains(temp.toLowerCase())){
@@ -35,15 +36,79 @@ public class StringProcessor{
 		    int x = words.indexOf(temp);
 		    counts.set(x,counts.get(x) + 1);
 		    wordcount++;
+=======
+	    if (tmpchr == 39 || tmpchr == 96){ //if it's an apostrophe
+		if (temp.length() <= 1){ //e.g. 'twas, '90s: decades are converted into "YYYYs" form, 'twas and other archaic language left alone
+		}
+		//contractions:
+		else if (temp.equals("won")){			
+		    include("will");
+		    include("not");
+		    i++;
+		}
+		else if (temp.equals("can")){
+		    include("can");
+		    include("not");
+		    i++;
+		}
+		else if (temp.charAt(temp.length()-1) == 'n'){ //couldn't, hasn't, don't
+		    include(temp.substring(0,temp.length()-2));
+		    include("not");
+		    temp = "";
+		    i++;
+		}
+		else if (input.charAt(i+1) == 'v') { //they've
+		    include(temp);
+		    include("have");
+		    temp = "";
+		    i++;
+		}
+		else if (input.charAt(i+1) == 'l'){ //they'll
+		    include(temp);
+		    include("will");
+		    i++;
+		}
+		else if (input.charAt(i+1) == 'd'){ // they'd (since this can either be "had" or "would", the 'd is neglected)
+		    include(temp);
+		    i++;
+		}
+		else if (input.charAt(i+1) == 's'){//he's, Jake's;
+		    include(temp);
+		    i++;
+		}
+		else if (temp.charAt(0) == 'i'){ //neglect all use of "I'm"
+		    temp = "";
+		    i++;
+		}
+	    }
+	    else if (!((tmpchr > 96 && tmpchr < 123) || tmpchr == 45)){ //if it's not in the alphabet or a hyphen
+		if (temp.length() > 1){
+		    include(temp);
+>>>>>>> 51a8e89d96d4c27b7c2153e59556f512759e22f7
 		}
 		temp = "";
 	    }
+	    
 	    else{
 		temp = temp + tmpchr;
-	    }
+	    }	    
 	}
+	include(temp);
 	relFreqs = new ArrayList<Double>(len/4);
 	buildRelFreqs();
+	System.out.println(relFreqs);
+	System.out.println(words);
+	System.out.println(counts);
+    }
+    
+    public void include(String temp){
+	if (!words.contains(temp.toLowerCase())){
+	    words.add(temp.toLowerCase());
+	    counts.add(0);
+	}
+	int x = words.indexOf(temp);
+	counts.set(x,counts.get(x) + 1);
+	wordcount++;
     }
     
     public String getInput(){ return input; }

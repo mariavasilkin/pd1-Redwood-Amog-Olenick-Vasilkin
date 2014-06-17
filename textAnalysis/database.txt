@@ -28,8 +28,8 @@ Rank	   Word	PoS	Frequency	Dispersion
 25	   his	a	1801708	0.95
 26	   from	i	1635914	0.99
 27	   that	d	1712406	0.94
-28	   not	x	1638830	0.98
-29	   n't	x	1619007	0.97
+28	   not	x	3257837 0.98
+29	   n't	x	3257837 0.97
 30	   by	i	1490548	0.96
 31	   she	p	1484869	0.91
 32	   or	c	1379320	0.97

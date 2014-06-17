@@ -3,13 +3,17 @@ import java.io.*;
 
 public class URLReader {
     public static void main(String[] args) throws Exception {
-	//	try {
-	    URL site = new URL("http://www.oracle.com");
+	try {
+
+	    URL site = new URL("http://en.wikipedia.org/wiki/HTTP_404");
+
 	    URLConnection c = site.openConnection();
-	    c.connect();
 	    
 	    HttpURLConnection con = (HttpURLConnection)c; 
-	 
+	    con.setRequestMethod("GET");
+	    con.setDoInput(true);
+	    con.setDoOutput(false);
+	    con.connect();
 	    int status = con.getResponseCode();
 	    System.out.println(status);
 	    
@@ -26,10 +30,10 @@ public class URLReader {
 		System.out.println(inputLine);
 	    in.close();
 	    	    
-//	}
-	/*	catch(Exception e){
+	}
+	catch(Exception e){
 	    System.out.println("failed");
-	    }*/
+	}
 
     }
 }
