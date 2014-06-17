@@ -34,5 +34,7 @@ Date: Name. what you did.
 
 06/13/14-06/15/14(weekend): Maria. Tried to combine the stuff in the different sketches into one file, but it didn't completely work.
 Worked on removing HTML tags.
+
+
 06/14/14: Anjelika. URLReader works fine and now the contents of a URL read out to a file.
 
