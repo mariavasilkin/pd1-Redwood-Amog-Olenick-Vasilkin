@@ -7,7 +7,7 @@ public class StringProcessor{
 
     private String input;
     private int wordcount;
-    private MyArrayList<String> words; //distinct words
+    private StringArrayList words; //distinct words
     private ArrayList<Integer> counts; // each word's count
     private ArrayList<Double> relFreqs;
     private String[][] database;
