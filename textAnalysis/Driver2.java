@@ -3,10 +3,14 @@ import java.util.*;
 import java.io.*;
 public class Driver2{
     public static void main(String[] args) {
-	String search = "";
-	String url = "";
 	TextConverter tc = new TextConverter();
-	try {
+	String text = tc.fromURLtoText("http://en.wikipedia.org/wiki/Pineapple", "Pineapple");
+
+	StringProcessor sp = new StringProcessor(text);
+	System.out.println(Arrays.toString(sp.mainWords(10)));
+    }
+
+	/*try {
 
 	    Scanner sc = new Scanner(System.in);
 
@@ -19,8 +23,7 @@ public class Driver2{
 	catch (Exception e) {
 	    e.printStackTrace();
 	}
-	String text = tc.fromURLtoText (url,search );
-	StringProcessor sp = new StringProcessor(text);
-	System.out.println(Arrays.toString(sp.mainWords(10)));
-    }
+	String text = tc.fromURLtoText (url,search );*/
+
+
 }
