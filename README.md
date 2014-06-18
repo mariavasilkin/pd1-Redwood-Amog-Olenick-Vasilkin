@@ -16,12 +16,12 @@ Instructions (for use and compiling):
 
 What Works:
 
-It successfully gets the information from the wiki page that we link to, and then removes the html tags from that source code. The list of children returned is pretty good. 
+It successfully gets the information from the wiki page that we link to, and then removes the html tags from that source code. The searching part of the processing works but it is very ugly.
 
 
 What Doesn't Work:
 
-The processing isn't totally solid yet. The overarching tree structure still has some issues, but it's not the worst.
+The processing isn't totally solid yet. The overarching tree structure still has some issues, but it's not the worst. The method for determining where something fits in the tree is not functional. 
 
 Data Structure(s): One large quinary (as opposed to binary) tree. 
 
