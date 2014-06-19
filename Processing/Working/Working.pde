@@ -1,40 +1,26 @@
-
-boolean setUp;//is it set up w/ a start screen yet?
-boolean nameEntered; //if you haed an insert
-boolean URLEntered;
-boolean parent;
-int activeTrees = 1;
 PFont font1;
 PFont font2;
-ActiveScreen aS;
-InsertName iN;
-InsertURL iU;
-Node n;
-Bloom b;
-TextInput tI;
-String URL = "";
-String insert = "";
-String typing = "";
-String backspaceTemp; 
-void setup() {
+
+boolean hasSetup;
+boolean nameEntered;
+boolean URLEntered;
+
+String typing;
+String insert;
+String URL;
+Start s;
+
+void setup(){
   size(displayWidth, displayHeight);
   background(150, 220, 150);
   font1 = createFont("Arial", 30, true);
   font2 = createFont("Arial", 20, true);
-  setUp = false;
-  nameEntered = false;
+  s = new Start();
+  hasSetup = false;
   URLEntered = false;
-  parent = true;
-  aS = new ActiveScreen();
-  iN = new InsertName();
-  iU = new InsertURL();
-  tI = new TextInput();
+  nameEntered = false;
 }
-void reset() {  
-  background(150, 220, 150);
-  typing = "";
-  aS.draw();
-}
+
 void keyPressed() {
   if (!nameEntered || !URLEntered) {
     if (key != CODED) {
@@ -63,6 +49,12 @@ void keyPressed() {
   }
 }
 
+void reset() {  
+  background(150, 220, 150);
+  typing = "";
+  s.draw();
+}
+
 void pressedEnter() {
   if (!nameEntered) {
     insert = typing;
@@ -78,17 +70,12 @@ void pressedEnter() {
   println(URL);
 }
 
-/*void createNode() {
- fill(46, 87, 100); 
- b = new Bloom(600, 450);
- n= new Node(insert, URL);
- }*/
-
-void draw() {
-  if (!setUp) {
-    aS.draw();    
-    setUp = true;
-  } 
-  tI.draw();
+void draw(){
+  if(!hasSetup){
+   s.draw();
+  hasSetup = true;
+  }
+ else{
+  
+ } 
 }
-

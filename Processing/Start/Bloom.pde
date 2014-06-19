@@ -10,14 +10,10 @@ class Bloom {
   Bloom(int x, int y){
     XCor = x;
     YCor = y;
-  }
-  
-  void setup() {
-    size(200, 200);
     time = millis();
-    background(0);
-    noLoop();
-  }
+    fill(150);
+  }  
+
   void draw() {
     while ( (millis () - time) > 50) {
       if (radius < 150) {

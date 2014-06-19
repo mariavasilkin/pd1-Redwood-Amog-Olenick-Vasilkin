@@ -1,4 +1,4 @@
-class ActiveScreen {
+class Start {
   void draw() {
     fill(150);
     textFont(font2);
@@ -26,5 +26,5 @@ class ActiveScreen {
     fill(150);
     textFont(font1);
   }
-}
+}  
 
