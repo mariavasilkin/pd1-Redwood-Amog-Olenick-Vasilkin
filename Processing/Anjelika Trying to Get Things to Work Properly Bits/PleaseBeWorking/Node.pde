@@ -11,6 +11,7 @@ class Node{
   xcor = x;
   ycor = y;
   tC = new TextConverter(n, w);
+  children = new Layer();
  } 
  
  Layer getLayer(){

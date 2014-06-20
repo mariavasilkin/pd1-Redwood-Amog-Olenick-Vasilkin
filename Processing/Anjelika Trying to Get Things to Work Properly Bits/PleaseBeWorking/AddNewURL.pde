@@ -1,7 +1,7 @@
 class AddNewURL{
   void draw(){
     fill(255);
-    rect(displayWidth - 600, 50, 300, 40);
+    rect(displayWidth - 600, 50, 450, 40);
     stroke(255);
     fill(150);  
    if (!hasHeading){
