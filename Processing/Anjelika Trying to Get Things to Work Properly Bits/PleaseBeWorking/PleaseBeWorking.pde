@@ -6,7 +6,7 @@ boolean nameEntered;
 boolean URLEntered;
 boolean hasHeading;
 boolean mustRedraw;
-boolean isParent;
+boolean isSeed;
 boolean creatingChild;
 
 String typing;
@@ -14,17 +14,19 @@ String name;
 String URL;
 
 int numChildren;
+int numTrees;
 
 ActiveTrees aT;
-InsertParent iP;
-BuildLayer bL;
+InsertSeed iS;
+InsertChild iC;
+BuildTree bT;
 
-Node parent;
-Node child1;
+Node seed;
+/*Node child1;
 Node child2;
 Node child3;
 Node child4;
-Node child5;
+Node child5;*/
 
 void setup(){
   size(displayWidth, displayHeight);
@@ -36,15 +38,16 @@ void setup(){
   nameEntered = false;
   hasHeading = false;
   mustRedraw = false;
-  isParent = true;
+  isSeed = true;
   creatingChild = false;
   numChildren = 0;
   typing = "";
   name = "";
   URL = "";
   aT = new ActiveTrees();
-  iP = new InsertParent();
-  bL = new BuildLayer();
+  iS = new InsertSeed();
+  iC = new InsertChild();
+  bT = new BuildTree();
   
 }
 
@@ -53,16 +56,9 @@ void draw(){
     aT.draw();
     hasSetup = true;
    }
-   if(isParent){
-     iP.draw(); 
+   else{
+    bT.draw(); 
    }
-   if(!isParent && !creatingChild){
-     nameEntered = false;
-     URLEntered = false;
-     creatingChild = true;
-   }
-   if(creatingChild)
-     bL.draw();
    
  }
 
@@ -94,8 +90,8 @@ void pressedEnter(){
       hasHeading = false;
       URLEntered = true;
     }
-    println(name);
-    println(URL);
+    //println(name);
+    //println(URL);
     if (creatingChild)
       mustRedraw = true;
     reset();
